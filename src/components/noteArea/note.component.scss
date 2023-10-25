@@ -1,0 +1,67 @@
+
+    // border:0px;
+    // padding:0px;
+    //margin-right: 70px;
+    // display: grid;
+    // flex-direction: row;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    .notes{
+        margin-top: 20px;
+        //display: fle;
+        background-color: #7dbdc2;
+        height: 200px;
+        position: relative;
+        box-shadow: 5px 5px 7px;
+        transform: rotate(0.5deg);
+        
+    
+        .title{
+            font-size: small;
+            font-weight: bold;
+            color: rgb(227, 241, 233);
+        }
+        .content{
+            font-size: medium;
+            font-weight: bold;
+            color: rgb(227, 241, 233);
+        }
+        .bottomIcons{
+             //display: flex;
+            // flex-wrap: wrap-reverse;
+            //justify-content: flex-end;
+            position: absolute;
+            bottom: 0;
+            color: rgb(227, 241, 233);
+            //margin-left: 20px;
+            .emailaddress{
+              color: red
+            }
+            .deleteIcon{
+                margin-left: 45px;
+                    :hover{
+                color: red;
+                cursor: pointer;
+                    }
+                
+            }
+            .addIcon{
+               
+                &:hover{
+                    color: green;
+                    cursor: pointer;
+                }
+            }
+             
+           
+            .dateTime{
+                color: rgb(227, 241, 233);
+                
+                font-size: small;
+                padding-bottom: 20px;
+               
+            }
+            
+        }
+        
+    }

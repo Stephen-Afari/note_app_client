@@ -1,0 +1,69 @@
+
+.inputCover{
+    margin-top: 20px;
+    display: flex;
+justify-content: center;
+
+
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    background: #c1e6e9;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    // border: 2px solid white;
+    // border-radius: 75%;
+    
+    .inputText{
+        position: relative;
+        border: none;
+        outline: none;
+     
+        color: gray;
+        //color: gray;      
+        //border: 2px solid white;
+        background: #c1e6e9;
+        // width: 180px;
+        // height: 80px;
+        //flex-wrap: wrap;
+       
+        //box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+       border-radius: 0px;
+     
+    }
+    .textInput{
+        position: relative;
+        border: none;
+        outline: none;
+        color: gray;  
+        background: #c1e6e9;
+        //box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+        //border: 2px solid white;
+       //border-radius: 10xpx;
+      
+    }
+    .addIconArea{
+        position: relative;
+        display: flex;
+        background: #c1e6e9;
+        box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+        justify-content: flex-end;
+        .addIcon{
+            height: 30px;
+            width: 60px;
+            // border:0px;
+            // margin: 0px;
+            color: #034146;
+            
+        }
+    }
+}
+}
+
+::placeholder{
+    color: #00becc;
+    opacity: 1;
+    }
+    // .inputText,.textInput:focus{
+    //     transform: scale(1.25);
+        
+    //   }
