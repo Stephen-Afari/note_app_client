@@ -2,12 +2,14 @@ import "./signin.component.scss";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { getLoggedInUser } from "../../../store/users/users.actions";
+import { useState } from "react";
 
 const SignIn =()=>{
-const { register, handleSubmit, formState: { errors } } = useForm();
+const { register, handleSubmit, formState: { errors }, reset } = useForm();
 const dispatch = useDispatch();
 
 const onSubmit = (data) =>{
+   
     const myEmail = data.email;
        const myPassword = data.password
         //password = data.password;
@@ -16,6 +18,7 @@ const onSubmit = (data) =>{
     dispatch(getLoggedInUser({ email: myEmail, password: myPassword }))
     
     console.log(data);
+    reset()
 } 
 
 return (

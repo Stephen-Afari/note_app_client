@@ -5,13 +5,13 @@ import { getLoggedInUser } from "./users.actions.js";
 //   return [...myArr, { ...objToAdd }];
 // };
 
-export const USERS_INITIAL_STATE = {
-  users: {},
+export const USERSDATA_INITIAL_STATE = {
+  usersdata: {},
 };
 
-export const usersSlice = createSlice({
-  name: "users",
-  initialState: USERS_INITIAL_STATE,
+export const usersdataSlice = createSlice({
+  name: "usersdata",
+  initialState: USERSDATA_INITIAL_STATE,
   // reducers: {
   //   setUsers(state, action) {
   //     //assigns the payload to the note state
@@ -23,11 +23,11 @@ export const usersSlice = createSlice({
     builder.addCase(getLoggedInUser.fulfilled, (state, action) => {
       // return action.payload;
     //state.users = action.payload.data.user;
-      state.users = action.payload.data.user;
+      state.usersdata = action.payload.token;
       
     });
   },
 });
 
-export const { setUsers } = usersSlice.actions;
-export const usersReducer = usersSlice.reducer;
+// export const { setUsersd } = usersdataSlice.actions;
+export const usersdataReducer = usersdataSlice.reducer;

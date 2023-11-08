@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getLoggedInUser } from '../../store/users/users.actions';
 
+
 const MyLogin = ()=>{
    
     //Import useForm hook from react-hook-form. It will return your register, handlesubmit, errors methods
@@ -22,9 +23,9 @@ const MyLogin = ()=>{
         //password = data.password;
        
     //dispatch these variables to send them into the createAsyncThunk to be used as arguments
-    dispatch(getLoggedInUser(myEmail))
-    dispatch(getLoggedInUser(myPassword))
-    console.log(myEmail)
+    // dispatch(getLoggedInUser(myEmail))
+    // dispatch(getLoggedInUser(myPassword))
+    // console.log(myEmail)
     
 };
     

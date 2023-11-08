@@ -6,19 +6,35 @@ import Note from '../noteArea/note.component.jsx';
 import './home.scss'
 import {useEffect} from 'react';
 import { useDispatch } from 'react-redux';
-import { getLoggedInUser } from '../../store/users/users.actions.js';
+//import { getLoggedInUser } from '../../store/users/users.actions.js';
 import {useSelector} from 'react-redux';
+import { selectNotecollection } from '../../store/notecollection/notecollection.selector.js';
+import { selectUsers } from '../../store/users/users.selector.js';
+//import { getNoteCollection } from '../../store/notecollection/notecollection.actions.js';
+import { selectUserdata } from '../../store/users/users.selector.js';
+import Footer from '../footer/footer.component.jsx';
+//import { postNoteData } from '../../store/postnotedata/postnotedata.actions.js';
+
+//import { selectUser } from '../../store/users/users.selector.js';
+//import { extractDataFromPayload } from '../../store/users/users.selector.js';
+
 
 const Home =()=> {
   const [notes, setNotes]= useState([]);
-  const dispatch = useDispatch();
-  const users = useSelector((state)=>state.users);
-  //Once the home component mounts, we call the getLoggedInUser action and log the user
-  useEffect(()=>{
-    dispatch(getLoggedInUser())
-    console.log(users)
-  },[dispatch]);
+  const usersToken = useSelector(selectUserdata);
+  const dispatch = useDispatch()
+  
+  const user = useSelector(selectUsers)
 
+  const noteCollection = useSelector(selectNotecollection);
+
+  //Once the home component mounts, we call the getLoggedInUser action and log the user
+  useEffect(() => {
+    //dispatch(getNoteCollection({ jwToken: usersToken}))
+    //dispatch(postNoteData({jwToken: usersToken}))
+  
+  }, []); 
+  
   const addNotes = (newNote)=>{
       setNotes((prevNotes)=>{
         return [...prevNotes,newNote]
@@ -56,6 +72,7 @@ const deleteNotes =(id)=>{
       )
      })}
      </div>
+     <Footer/>
     </div>
   );
 }

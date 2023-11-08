@@ -26,6 +26,9 @@
             font-weight: bold;
             color: rgb(227, 241, 233);
         }
+        .emailaddress{
+            color: rgb(227, 241, 233);
+          }
         .bottomIcons{
              //display: flex;
             // flex-wrap: wrap-reverse;
@@ -34,9 +37,7 @@
             bottom: 0;
             color: rgb(227, 241, 233);
             //margin-left: 20px;
-            .emailaddress{
-              color: red
-            }
+           
             .deleteIcon{
                 margin-left: 45px;
                     :hover{

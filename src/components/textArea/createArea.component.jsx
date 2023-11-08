@@ -9,7 +9,7 @@ const CreateArea = (props)=>{
 const [note, setNote]= useState(initialState)
 
 const handleChange = (event)=>{
-    //keep the previous elements an they are and assigned new values to the changed ones
+    //keep the previous elements and they are and assigned new values to the changed ones
     const {name, value}= event.target;
 
     setNote((prevNote)=>{
@@ -21,7 +21,7 @@ const handleChange = (event)=>{
 }
 const submitNote = (event)=>{
     props.onAdd(note);
-
+//reset the fields to null for reuse
     setNote({
         title:"",
         content:""
