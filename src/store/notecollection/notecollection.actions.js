@@ -12,7 +12,7 @@ export const getNoteCollection = createAsyncThunk(
     try {
      
       let noteCollection = await fetch(
-        "http://localhost:5000/api/v1/notes",
+        "https://afarinotes-api.onrender.com/api/v1/notes",
         {
           method: "GET",
          
