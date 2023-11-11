@@ -6,7 +6,7 @@ export const getLoggedInUser = createAsyncThunk(
   async ({ email, password }) => {
     try {
       let loggedInUserResponse = await fetch(
-        "http://localhost:5000/api/v1/users/login",
+        "https://afarinotes-api.onrender.com/api/v1/users/login",
         {
           method: "post",
           body: JSON.stringify({
