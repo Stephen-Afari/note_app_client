@@ -7,6 +7,7 @@ Project Title
 Full Stack Note application client
 
 Overview
+![HowReduxWorks](https://github.com/Stephen-Afari/note_app_client/assets/62534292/fb57e1ea-fa3b-443a-9b71-ffd5a8dc7c73)
 
 
 
