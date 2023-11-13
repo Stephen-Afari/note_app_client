@@ -19,5 +19,9 @@ Sign-in functionality: This is built using the useForm hook which enables us to 
 ![LogIn](https://github.com/Stephen-Afari/note_app_client/assets/62534292/8aa1d0d0-74a4-4cd3-999d-a60aa45363cf)
 ![CreateNote](https://github.com/Stephen-Afari/note_app_client/assets/62534292/356a1989-48e4-438f-82d2-f26287b3723b)
 
+Application Structure:
+This fullStack application was built using the Model, View, Controller Architecture..This client side application represents the view part of it. The Model and Controller Section of the app will be discussed in the backend API project in this repository.
+
+
 
 
