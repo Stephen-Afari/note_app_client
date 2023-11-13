@@ -8,3 +8,5 @@ Full Stack Note application client
 
 Overview
 
+https://github.com/Stephen-Afari/note_app_client/assets/62534292/29491cd1-bf9b-4e96-831e-efcffe1ddc99
+
