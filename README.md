@@ -22,6 +22,7 @@ Sign-in functionality: This is built using the useForm hook which enables us to 
 
 Application Structure:
 This fullStack application was built using the Model, View, Controller Architecture..This client side application represents the view part of it. The Model and Controller Section of the app will be discussed in the backend API project in this repository.
+
 <img width="242" alt="Project Structure" src="https://github.com/Stephen-Afari/note_app_client/assets/62534292/7e8b4568-5f50-431b-8a53-bb393a75083f">
 
 
